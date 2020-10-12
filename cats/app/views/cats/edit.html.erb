@@ -1,0 +1,53 @@
+<h1>Create a Cat!</h1>
+
+<%= render 'form', cat: @cat %>
+
+<!-- <form action="<%= cat_url(@cat) %>" method="POST">
+    <input type="hidden" name="_method" value="PATCH">
+    <label>Name
+        <input type="text" name="cat[name]" value="<%= @cat.name %>">
+    </label>
+    <br>
+    <br>
+    <label>Sex
+        <input type="radio" name="cat[sex]" value="M" 
+        <%= @cat.sex == "M" ? "checked" : "" %> > M
+        <input type="radio" name="cat[sex]" value="F"
+        <%= @cat.sex == "F" ? "checked" : "" %> > F
+    </label>
+    <br>
+    <br>
+
+    <label>Color
+        <select name="cat[color]">
+            <option value="default" disabled>Select a Color</option>
+            <option value="black" 
+            <%= @cat.color == "black" ? "selected" : "" %>>Black</option>
+            <option value="white"
+            <%= @cat.color == "white" ? "selected" : "" %>>White</option>
+            <option value="ginger"
+            <%= @cat.color == "ginger" ? "selected" : "" %>>Ginger</option>
+            <option value="gray"
+            <%= @cat.color == "gray" ? "selected" : "" %>>Gray</option>
+        </select>
+    </label>
+    <br>
+    <br>
+
+
+    <label>Birth Date
+        <input type="date" name="cat[birth_date]" value="<%= @cat.birth_date %>">
+    </label>
+    <br>
+    <br>
+
+    <label>Description
+        <textarea name="cat[description]" value="<%= @cat.description %>">
+        <%= @cat.description %>
+        </textarea>
+    </label>
+    <br>
+    <br>
+
+    <input type="submit" value="Edit this cat">
+</form> -->

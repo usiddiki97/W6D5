@@ -1,0 +1,35 @@
+<h1> Just one cat! </h1>
+<table>
+    <thead>
+        <tr>
+            <th colspan="1">Cat Attributes</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr></tr>
+        <tr>
+            <td>Name</td>
+            <td><%= @cat.name %></td>
+        </tr>
+        <tr>
+            <td>Birth Date</td>
+            <td><%= @cat.birth_date %></td>
+        </tr>
+        <tr>
+            <td>Color</td>
+            <td><%= @cat.color %></td>
+        </tr>
+        <tr>
+            <td>Sex</td>
+            <td><%= @cat.sex %></td>
+        </tr>
+        <tr>
+            <td>Description</td>
+            <td><%= @cat.description %></td>
+        </tr>
+    </tbody>
+</table>
+
+<a href="<%= cats_url %>">Back to all cats!</a>
+<br>
+<a href="<%= edit_cat_url(@cat) %>">Edit this cat!</a>

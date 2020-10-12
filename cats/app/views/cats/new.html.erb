@@ -1,0 +1,45 @@
+<h1>Create a Cat!</h1>
+
+<%= render 'form', cat: @cat %>
+<a href="<%= cats_url %>">No new cat today!</a>
+<!-- <form action="<%= cats_url %>" method="POST">
+    <label>Name
+        <input type="text" name="cat[name]" value="<%= @cat.name %>">
+    </label>
+    <br>
+    <br>
+    <label>Sex
+        <input type="radio" name="cat[sex]" value="M"> M
+        <input type="radio" name="cat[sex]" value="F"> F
+    </label>
+    <br>
+    <br>
+
+    <label>Color
+        <select name="cat[color]">
+            <option value="default" selected disabled>Select a Color</option>
+            <option value="black">Black</option>
+            <option value="white">White</option>
+            <option value="ginger">Ginger</option>
+            <option value="gray">Gray</option>
+        </select>
+    </label>
+    <br>
+    <br>
+
+
+    <label>Birth Date
+        <input type="date" name="cat[birth_date]" value="2020/10/09">
+    </label>
+    <br>
+    <br>
+
+    <label>Description
+        <textarea name="cat[description]" value="<%= @cat.description %>">
+        </textarea>
+    </label>
+    <br>
+    <br>
+
+    <input type="submit" value="create a cat">
+</form> -->
